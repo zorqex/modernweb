@@ -3,133 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Scroll Experience</title>
+    <title>Киокушинкай Каратэ — Путь Сильнейших</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-theme="red">
+
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <h1 class="logo">ModernWeb</h1>
+            <div class="logo">
+                <span class="logo-kanji">極</span>
+                <span class="logo-text">КИОКУШИНКАЙ</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Главная</a></li>
-                <li><a href="#features">Возможности</a></li>
-                <li><a href="#gallery">Галерея</a></li>
-                <li><a href="#contact">Контакт</a></li>
+                <li><a href="#about">О стиле</a></li>
+                <li><a href="#training">Тренировки</a></li>
+                <li><a href="#themes">Стиль</a></li>
+                <li><a href="#contact">Записаться</a></li>
             </ul>
+            <button class="nav-toggle" aria-label="Меню">☰</button>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title" data-parallax="0.5">Откройте новый мир</h2>
-            <p class="hero-subtitle" data-parallax="0.3">современного веб-дизайна</p>
-            <button class="cta-button">Начать путешествие</button>
-        </div>
-        <div class="hero-bg" data-parallax="0.8">
+        <div class="hero-bg">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
+            <div class="hero-circle"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-kiai">OSU!</p>
+            <h1 class="hero-title">
+                <span>ПУТЬ</span>
+                <span class="accent">СИЛЬНЕЙШИХ</span>
+            </h1>
+            <p class="hero-subtitle">Киокушинкай — самый твёрдый стиль каратэ в мире.<br>Реальный контакт. Настоящая сила. Железный дух.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Начать тренировки</a>
+                <a href="#about" class="btn-outline">Узнать больше</a>
+            </div>
+        </div>
+        <div class="hero-stats-bar">
+            <div class="hstat"><span class="hstat-num">1964</span><span class="hstat-label">Год основания</span></div>
+            <div class="hstat"><span class="hstat-num">130+</span><span class="hstat-label">Стран мира</span></div>
+            <div class="hstat"><span class="hstat-num">15М+</span><span class="hstat-label">Практикующих</span></div>
+            <div class="hstat"><span class="hstat-num">10-й</span><span class="hstat-label">Чемпионат мира</span></div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2 class="section-title">Волшебные возможности</h2>
-        <div class="features-container">
-            <div class="feature-card" data-feature="1">
-                <div class="feature-icon">✨</div>
-                <h3>Параллакс</h3>
-                <p>Глубина и движение на каждом пикселе</p>
-            </div>
-            <div class="feature-card" data-feature="2">
-                <div class="feature-icon">🎨</div>
-                <h3>Дизайн</h3>
-                <p>Современные цвета и плавные переходы</p>
-            </div>
-            <div class="feature-card" data-feature="3">
-                <div class="feature-icon">⚡</div>
-                <h3>Быстрота</h3>
-                <p>Оптимизировано для всех устройств</p>
-            </div>
-            <div class="feature-card" data-feature="4">
-                <div class="feature-icon">🌈</div>
-                <h3>Анимация</h3>
-                <p>Плавные эффекты при взаимодействии</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О Киокушинкай</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-quote">"Без правильного духа одно лишь обучение боевым искусствам является угрозой обществу."</p>
+                    <p class="about-author">— Масутацу Ояма, основатель Киокушинкай</p>
+                    <p>Киокушинкай (極真会) — полноконтактный стиль каратэ, основанный в <strong>1964 году</strong> Масутацу Ояма. Название переводится как «общество абсолютной истины».</p>
+                    <p>Стиль известен жёсткими тренировками, реальными спаррингами и системой Кёкушин-турниров, где победа достигается только нокаутом или судейским решением.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card" data-feature="1">
+                        <div class="about-icon">🥋</div>
+                        <h3>Полный контакт</h3>
+                        <p>Удары в полную силу. Никакой показухи — только реальный бой.</p>
+                    </div>
+                    <div class="about-card" data-feature="2">
+                        <div class="about-icon">⛩️</div>
+                        <h3>Традиции</h3>
+                        <p>60 лет истории, ката, этикет додзё и философия будо.</p>
+                    </div>
+                    <div class="about-card" data-feature="3">
+                        <div class="about-icon">🏆</div>
+                        <h3>Чемпионаты</h3>
+                        <p>Международные турниры с участниками из 130+ стран мира.</p>
+                    </div>
+                    <div class="about-card" data-feature="4">
+                        <div class="about-icon">💪</div>
+                        <h3>Закалка духа</h3>
+                        <p>100-man kumite. Испытания, которые меняют человека навсегда.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Horizontal Scroll Section -->
-    <section class="horizontal-scroll-section">
-        <h2 class="section-title">Горизонтальное путешествие</h2>
+    <!-- Training Section -->
+    <section id="training" class="training">
+        <div class="container">
+            <h2 class="section-title">Программа тренировок</h2>
+            <p class="section-sub">Прокрутите, чтобы узнать о каждом разделе</p>
+        </div>
         <div class="horizontal-container">
             <div class="scroll-card">
-                <div class="card-number">01</div>
-                <h3>Откройте</h3>
-                <p>Исследуйте новые горизонты веб-технологий</p>
+                <div class="card-num">01</div>
+                <div class="card-icon">🤜</div>
+                <h3>Кумитэ</h3>
+                <p>Полноконтактный спарринг — сердце Киокушинкай. Учитесь под реальным давлением боя.</p>
+                <ul class="card-list">
+                    <li>Ипpon kumite</li>
+                    <li>Jiyu kumite</li>
+                    <li>Тамо ваза</li>
+                </ul>
             </div>
             <div class="scroll-card">
-                <div class="card-number">02</div>
-                <h3>Создавайте</h3>
-                <p>Разработайте уникальные интерфейсы</p>
+                <div class="card-num">02</div>
+                <div class="card-icon">🌊</div>
+                <h3>Ката</h3>
+                <p>26 форм от базовых Тайкёку до сложнейших Гарю и Сэйэнтэй. Движение как медитация.</p>
+                <ul class="card-list">
+                    <li>Тайкёку (1–3)</li>
+                    <li>Хэйан (1–5)</li>
+                    <li>Канку, Гэкисай</li>
+                </ul>
             </div>
             <div class="scroll-card">
-                <div class="card-number">03</div>
-                <h3>Вдохновляйте</h3>
-                <p>Поражайте пользователей новыми идеями</p>
+                <div class="card-num">03</div>
+                <div class="card-icon">🧱</div>
+                <h3>Тамэшивари</h3>
+                <p>Разбивание твёрдых предметов. Доска, черепица, лёд — тест реальной силы удара.</p>
+                <ul class="card-list">
+                    <li>Сэйкэн (кулак)</li>
+                    <li>Хайсоку (подъём стопы)</li>
+                    <li>Хиджи (локоть)</li>
+                </ul>
             </div>
             <div class="scroll-card">
-                <div class="card-number">04</div>
-                <h3>Преуспевайте</h3>
-                <p>Достигайте новых высот мастерства</p>
+                <div class="card-num">04</div>
+                <div class="card-icon">🏋️</div>
+                <h3>Физподготовка</h3>
+                <p>Отжимания на кулаках, приседания, пресс — базовая физическая подготовка бойца.</p>
+                <ul class="card-list">
+                    <li>100 отжиманий</li>
+                    <li>Мешок/макивара</li>
+                    <li>Растяжка, кёкушин-йога</li>
+                </ul>
+            </div>
+            <div class="scroll-card">
+                <div class="card-num">05</div>
+                <div class="card-icon">🧘</div>
+                <h3>Философия OSU</h3>
+                <p>OSU — слово, объединяющее терпение, уважение и непреклонную волю к победе.</p>
+                <ul class="card-list">
+                    <li>Моральный кодекс додзё</li>
+                    <li>Этикет и уважение</li>
+                    <li>Путь воина — будо</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <h2 class="section-title">Визуальная галерея</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+    <!-- Themes / Gallery Section -->
+    <section id="themes" class="themes">
+        <div class="container">
+            <h2 class="section-title">Выберите свой стиль</h2>
+            <p class="section-sub">Нажмите на цвет — и сайт изменит тему оформления</p>
+            <div class="themes-grid">
+                <div class="theme-card active"
+                     data-theme="red"
+                     data-color1="#c0392b"
+                     data-color2="#e74c3c"
+                     style="background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);">
+                    <span class="theme-label">Кровь и огонь</span>
+                    <div class="theme-check">✓</div>
+                </div>
+                <div class="theme-card"
+                     data-theme="gold"
+                     data-color1="#b8860b"
+                     data-color2="#f0c040"
+                     style="background: linear-gradient(135deg, #b8860b 0%, #f0c040 100%);">
+                    <span class="theme-label">Чемпион</span>
+                    <div class="theme-check">✓</div>
+                </div>
+                <div class="theme-card"
+                     data-theme="blue"
+                     data-color1="#1a5276"
+                     data-color2="#2e86c1"
+                     style="background: linear-gradient(135deg, #1a5276 0%, #2e86c1 100%);">
+                    <span class="theme-label">Синее небо</span>
+                    <div class="theme-check">✓</div>
+                </div>
+                <div class="theme-card"
+                     data-theme="green"
+                     data-color1="#1e8449"
+                     data-color2="#27ae60"
+                     style="background: linear-gradient(135deg, #1e8449 0%, #27ae60 100%);">
+                    <span class="theme-label">Лес и сила</span>
+                    <div class="theme-check">✓</div>
+                </div>
+                <div class="theme-card"
+                     data-theme="purple"
+                     data-color1="#6c3483"
+                     data-color2="#9b59b6"
+                     style="background: linear-gradient(135deg, #6c3483 0%, #9b59b6 100%);">
+                    <span class="theme-label">Мастер</span>
+                    <div class="theme-check">✓</div>
+                </div>
+                <div class="theme-card"
+                     data-theme="orange"
+                     data-color1="#ca6f1e"
+                     data-color2="#f39c12"
+                     style="background: linear-gradient(135deg, #ca6f1e 0%, #f39c12 100%);">
+                    <span class="theme-label">Закат воина</span>
+                    <div class="theme-check">✓</div>
+                </div>
+            </div>
+            <div class="theme-toast" id="themeToast">Тема изменена! 🔥</div>
         </div>
     </section>
 
     <!-- Stats Section -->
     <section class="stats">
-        <div class="stat-item">
-            <div class="stat-number" data-count="1000">0</div>
-            <p>Счастливых пользователей</p>
+        <div class="container stats-inner">
+            <div class="stat-item">
+                <div class="stat-number" data-count="60">0</div>
+                <p>Лет традиций</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="130">0</div>
+                <p>Стран мира</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="15">0</div>
+                <p>Млн. учеников</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="7">0</div>
+                <p>Данов — высший пояс</p>
+            </div>
         </div>
-        <div class="stat-item">
-            <div class="stat-number" data-count="500">0</div>
-            <p>Проектов завершено</p>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number" data-count="99">0</div>
-            <p>Процентов удовлетворения</p>
+    </section>
+
+    <!-- Belts Section -->
+    <section class="belts">
+        <div class="container">
+            <h2 class="section-title">Система поясов</h2>
+            <div class="belts-row">
+                <div class="belt" style="--belt-color:#f0f0f0;"><span>Белый</span><small>10-й кю</small></div>
+                <div class="belt" style="--belt-color:#f5a623;"><span>Оранжевый</span><small>9-й кю</small></div>
+                <div class="belt" style="--belt-color:#4facfe;"><span>Голубой</span><small>8-й кю</small></div>
+                <div class="belt" style="--belt-color:#f5a623; border-top: 3px solid #333;"><span>Оранж+полоса</span><small>7-й кю</small></div>
+                <div class="belt" style="--belt-color:#4facfe; border-top: 3px solid #333;"><span>Голубой+полоса</span><small>6-й кю</small></div>
+                <div class="belt" style="--belt-color:#f9e900;"><span>Жёлтый</span><small>5-й кю</small></div>
+                <div class="belt" style="--belt-color:#43e97b;"><span>Зелёный</span><small>4-й кю</small></div>
+                <div class="belt" style="--belt-color:#764ba2;"><span>Коричневый</span><small>3–1 кю</small></div>
+                <div class="belt" style="--belt-color:#1a1a1a; border: 2px solid gold;"><span style="color:#fff;">Чёрный</span><small style="color:#f0c040;">1-й–7-й дан</small></div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2 class="section-title">Давайте создадим вместе</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Ваше имя" required>
-            <input type="email" placeholder="Ваш email" required>
-            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
-            <button type="submit" class="submit-btn">Отправить</button>
-        </form>
+        <div class="container contact-inner">
+            <div class="contact-info">
+                <h2 class="section-title" style="text-align:left;">Записаться<br>в секцию</h2>
+                <p>Первое занятие — бесплатно. Приходите в любом возрасте и любой физической форме. Мы начинаем с нуля.</p>
+                <div class="contact-details">
+                    <div class="contact-detail">📍 <span>г. Москва, ул. Будо, 1</span></div>
+                    <div class="contact-detail">📞 <span>+7 (999) 000-00-00</span></div>
+                    <div class="contact-detail">🕐 <span>Пн/Ср/Пт — 18:00–20:00</span></div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <select>
+                    <option value="" disabled selected>Ваш возраст</option>
+                    <option>7–12 лет (детская группа)</option>
+                    <option>13–17 лет (подростки)</option>
+                    <option>18+ лет (взрослые)</option>
+                </select>
+                <textarea placeholder="Вопрос или комментарий (необязательно)" rows="4"></textarea>
+                <button type="submit" class="btn-primary">Записаться — это бесплатно</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 ModernWeb. Все права защищены.</p>
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <span class="logo-kanji">極</span>
+                <span>КИОКУШИНКАЙ</span>
+            </div>
+            <p class="footer-motto">OSU! — терпение, уважение, воля.</p>
+            <p class="footer-copy">&copy; 2026 Киокушинкай Каратэ. Все права защищены.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
