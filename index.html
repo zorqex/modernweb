@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Scroll Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">ModernWeb</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#features">Возможности</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title" data-parallax="0.5">Откройте новый мир</h2>
+            <p class="hero-subtitle" data-parallax="0.3">современного веб-дизайна</p>
+            <button class="cta-button">Начать путешествие</button>
+        </div>
+        <div class="hero-bg" data-parallax="0.8">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">Волшебные возможности</h2>
+        <div class="features-container">
+            <div class="feature-card" data-feature="1">
+                <div class="feature-icon">✨</div>
+                <h3>Параллакс</h3>
+                <p>Глубина и движение на каждом пикселе</p>
+            </div>
+            <div class="feature-card" data-feature="2">
+                <div class="feature-icon">🎨</div>
+                <h3>Дизайн</h3>
+                <p>Современные цвета и плавные переходы</p>
+            </div>
+            <div class="feature-card" data-feature="3">
+                <div class="feature-icon">⚡</div>
+                <h3>Быстрота</h3>
+                <p>Оптимизировано для всех устройств</p>
+            </div>
+            <div class="feature-card" data-feature="4">
+                <div class="feature-icon">🌈</div>
+                <h3>Анимация</h3>
+                <p>Плавные эффекты при взаимодействии</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Scroll Section -->
+    <section class="horizontal-scroll-section">
+        <h2 class="section-title">Горизонтальное путешествие</h2>
+        <div class="horizontal-container">
+            <div class="scroll-card">
+                <div class="card-number">01</div>
+                <h3>Откройте</h3>
+                <p>Исследуйте новые горизонты веб-технологий</p>
+            </div>
+            <div class="scroll-card">
+                <div class="card-number">02</div>
+                <h3>Создавайте</h3>
+                <p>Разработайте уникальные интерфейсы</p>
+            </div>
+            <div class="scroll-card">
+                <div class="card-number">03</div>
+                <h3>Вдохновляйте</h3>
+                <p>Поражайте пользователей новыми идеями</p>
+            </div>
+            <div class="scroll-card">
+                <div class="card-number">04</div>
+                <h3>Преуспевайте</h3>
+                <p>Достигайте новых высот мастерства</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Визуальная галерея</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+            <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+            <div class="gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+            <div class="gallery-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+            <div class="gallery-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <div class="stat-number" data-count="1000">0</div>
+            <p>Счастливых пользователей</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" data-count="500">0</div>
+            <p>Проектов завершено</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" data-count="99">0</div>
+            <p>Процентов удовлетворения</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Давайте создадим вместе</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 ModernWeb. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
