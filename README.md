@@ -2,8 +2,9 @@
 
 > Красивый современный сайт с параллакс-эффектами и необычным прокручиванием
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-green?style=flat-square)](https://github.com/ZORQEX/modernweb)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![🚀 Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-success?style=for-the-badge)](https://zorqex.github.io/modernweb/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/ZORQEX/modernweb)
+[![License MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/ZORQEX/modernweb?style=flat-square)](../../stargazers)
 
 ## ✨ Особенности
@@ -17,7 +18,12 @@
 
 ## 🚀 Быстрый старт
 
-### Просмотр сайта
+### 🌐 Открыть живой сайт
+**[https://zorqex.github.io/modernweb/](https://zorqex.github.io/modernweb/)**
+
+Сайт уже развёрнут на GitHub Pages и доступен 24/7! ✨
+
+### Просмотр сайта локально
 Просто откройте `index.html` в браузере:
 ```bash
 # Windows
