@@ -1,26 +1,21 @@
-/* ─── Language Switcher ─── */
 const LANG_MAP = { ru: 'ru', kz: 'kk', en: 'en' };
 
 function applyLang(lang) {
-    // Text elements
     document.querySelectorAll('[data-ru]').forEach(el => {
         const text = el.dataset[lang];
         if (text && el.children.length === 0) el.textContent = text;
     });
 
-    // Input / textarea placeholders
     document.querySelectorAll('[data-ru-ph]').forEach(el => {
         const ph = el.dataset[lang + 'Ph'];
         if (ph) el.placeholder = ph;
     });
 
-    // Select options
     document.querySelectorAll('select option[data-ru]').forEach(el => {
         const text = el.dataset[lang];
         if (text) el.textContent = text;
     });
 
-    // Active button highlight
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
     });
@@ -33,11 +28,9 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
 });
 
-// Restore on load
 const savedLang = localStorage.getItem('lang') || 'ru';
 if (savedLang !== 'ru') applyLang(savedLang);
 
-/* ─── Parallax on Hero blobs ─── */
 const blob1 = document.querySelector('.blob-1');
 const blob2 = document.querySelector('.blob-2');
 
@@ -48,7 +41,6 @@ document.querySelector('.hero')?.addEventListener('mousemove', e => {
     if (blob2) blob2.style.transform = `translate(${-x}px, ${-y}px)`;
 });
 
-/* ─── Reveal on scroll ─── */
 const revealTargets = document.querySelectorAll(
     '.about-card, .scroll-card, .belt, .stat-item, .schedule-card, .achievement'
 );
@@ -66,7 +58,6 @@ const revealObserver = new IntersectionObserver(entries => {
 
 revealTargets.forEach(el => revealObserver.observe(el));
 
-/* ─── Counter Animation ─── */
 const counters = document.querySelectorAll('.stat-number');
 
 const counterObserver = new IntersectionObserver(entries => {
@@ -87,7 +78,6 @@ const counterObserver = new IntersectionObserver(entries => {
 
 counters.forEach(c => counterObserver.observe(c));
 
-/* ─── Drag-to-scroll horizontal container ─── */
 const hContainer = document.querySelector('.horizontal-container');
 if (hContainer) {
     let isDown = false, startX, scrollLeft;
@@ -107,7 +97,6 @@ if (hContainer) {
     });
 }
 
-/* ─── Sticky header shadow ─── */
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
     header.style.boxShadow = window.scrollY > 60
@@ -115,7 +104,6 @@ window.addEventListener('scroll', () => {
         : 'none';
 });
 
-/* ─── Mobile nav ─── */
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks  = document.querySelector('.nav-links');
 
@@ -124,13 +112,12 @@ navLinks?.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-/* ─── Contact form ─── */
 document.querySelector('.contact-form')?.addEventListener('submit', e => {
     e.preventDefault();
     const btn  = e.target.querySelector('.btn-primary');
     const lang = localStorage.getItem('lang') || 'ru';
     const orig = btn.textContent;
-    btn.textContent = lang === 'kz' ? 'Жазылдыңыз! OSU! 🥋' : 'Записаны! OSU! 🥋';
+    btn.textContent = lang === 'kz' ? 'Жазылдыңыз! OSU! 🥋' : lang === 'en' ? 'Signed up! OSU! 🥋' : 'Записаны! OSU! 🥋';
     btn.style.opacity = '0.8';
     e.target.reset();
     setTimeout(() => {

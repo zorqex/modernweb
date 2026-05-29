@@ -34,7 +34,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     padding: 0 2rem;
 }
 
-/* ─── Header ─── */
+
 .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -164,7 +164,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     cursor: pointer;
 }
 
-/* ─── Hero ─── */
+
 .hero {
     position: relative;
     min-height: 100vh;
@@ -353,7 +353,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     text-align: center;
 }
 
-/* ─── Section common ─── */
+
 .section-title {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
@@ -379,7 +379,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     font-size: 0.95rem;
 }
 
-/* ─── About ─── */
+
 .about {
     padding: 7rem 0;
 }
@@ -455,7 +455,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     color: var(--muted);
 }
 
-/* ─── Training / Horizontal Scroll ─── */
+
 .training {
     padding: 7rem 0;
     background: var(--dark2);
@@ -546,7 +546,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     color: var(--c2);
 }
 
-/* ─── Trainer Section ─── */
+
 .trainer-section {
     padding: 7rem 0;
 }
@@ -646,7 +646,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     color: var(--muted);
 }
 
-/* ─── Stats ─── */
+
 .stats {
     padding: 5rem 0;
     background: var(--dark2);
@@ -679,7 +679,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     margin-top: 0.3rem;
 }
 
-/* ─── Belts ─── */
+
 .belts {
     padding: 7rem 0;
     overflow: hidden;
@@ -738,7 +738,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     box-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
-/* ─── Schedule ─── */
+
 .schedule {
     padding: 7rem 0;
     background: var(--dark2);
@@ -810,7 +810,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     color: var(--muted);
 }
 
-/* ─── Contact ─── */
+
 .contact {
     padding: 7rem 0;
 }
@@ -896,7 +896,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     margin-left: 0;
 }
 
-/* ─── Footer ─── */
+
 .footer {
     padding: 2.5rem 0;
     border-top: 1px solid rgba(255,255,255,0.06);
@@ -931,7 +931,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     font-size: 0.8rem;
 }
 
-/* ─── Animations ─── */
+
 @keyframes morphing {
     0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
     50%       { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
@@ -953,7 +953,7 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
     transform: translateY(0);
 }
 
-/* ─── Responsive ─── */
+
 @media (max-width: 1024px) {
     .trainer-grid {
         grid-template-columns: 260px 1fr;
@@ -1015,3 +1015,4 @@ h1, h2, h3, .logo-text { font-family: 'Oswald', sans-serif; }
         grid-template-columns: 1fr;
     }
 }
+
