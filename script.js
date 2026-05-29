@@ -1,40 +1,41 @@
-/* ─── Theme Switcher ─── */
-const themes = {
-    red:    { c1: '#c0392b', c2: '#e74c3c', name: 'Кровь и огонь' },
-    gold:   { c1: '#b8860b', c2: '#f0c040', name: 'Чемпион' },
-    blue:   { c1: '#1a5276', c2: '#2e86c1', name: 'Синее небо' },
-    green:  { c1: '#1e8449', c2: '#27ae60', name: 'Лес и сила' },
-    purple: { c1: '#6c3483', c2: '#9b59b6', name: 'Мастер' },
-    orange: { c1: '#ca6f1e', c2: '#f39c12', name: 'Закат воина' },
-};
+/* ─── Language Switcher ─── */
+const LANG_MAP = { ru: 'ru', kz: 'kk', en: 'en' };
 
-const root = document.documentElement;
-const toast = document.getElementById('themeToast');
-let toastTimer;
-
-function applyTheme(key) {
-    const t = themes[key];
-    if (!t) return;
-
-    root.style.setProperty('--c1', t.c1);
-    root.style.setProperty('--c2', t.c2);
-    root.style.setProperty('--gradient', `linear-gradient(135deg, ${t.c1} 0%, ${t.c2} 100%)`);
-
-    document.body.dataset.theme = key;
-
-    document.querySelectorAll('.theme-card').forEach(card => {
-        card.classList.toggle('active', card.dataset.theme === key);
+function applyLang(lang) {
+    // Text elements
+    document.querySelectorAll('[data-ru]').forEach(el => {
+        const text = el.dataset[lang];
+        if (text && el.children.length === 0) el.textContent = text;
     });
 
-    toast.textContent = `${t.name} 🔥`;
-    toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+    // Input / textarea placeholders
+    document.querySelectorAll('[data-ru-ph]').forEach(el => {
+        const ph = el.dataset[lang + 'Ph'];
+        if (ph) el.placeholder = ph;
+    });
+
+    // Select options
+    document.querySelectorAll('select option[data-ru]').forEach(el => {
+        const text = el.dataset[lang];
+        if (text) el.textContent = text;
+    });
+
+    // Active button highlight
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    document.documentElement.lang = LANG_MAP[lang] || lang;
+    localStorage.setItem('lang', lang);
 }
 
-document.querySelectorAll('.theme-card').forEach(card => {
-    card.addEventListener('click', () => applyTheme(card.dataset.theme));
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
 });
+
+// Restore on load
+const savedLang = localStorage.getItem('lang') || 'ru';
+if (savedLang !== 'ru') applyLang(savedLang);
 
 /* ─── Parallax on Hero blobs ─── */
 const blob1 = document.querySelector('.blob-1');
@@ -48,11 +49,11 @@ document.querySelector('.hero')?.addEventListener('mousemove', e => {
 });
 
 /* ─── Reveal on scroll ─── */
-const reveals = document.querySelectorAll(
-    '.about-card, .scroll-card, .theme-card, .belt, .stat-item'
+const revealTargets = document.querySelectorAll(
+    '.about-card, .scroll-card, .belt, .stat-item, .schedule-card, .achievement'
 );
 
-reveals.forEach(el => el.classList.add('reveal'));
+revealTargets.forEach(el => el.classList.add('reveal'));
 
 const revealObserver = new IntersectionObserver(entries => {
     entries.forEach((entry, i) => {
@@ -63,7 +64,7 @@ const revealObserver = new IntersectionObserver(entries => {
     });
 }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
-reveals.forEach(el => revealObserver.observe(el));
+revealTargets.forEach(el => revealObserver.observe(el));
 
 /* ─── Counter Animation ─── */
 const counters = document.querySelectorAll('.stat-number');
@@ -97,7 +98,7 @@ if (hContainer) {
         scrollLeft = hContainer.scrollLeft;
     });
     hContainer.addEventListener('mouseleave', () => { isDown = false; });
-    hContainer.addEventListener('mouseup', () => { isDown = false; });
+    hContainer.addEventListener('mouseup',    () => { isDown = false; });
     hContainer.addEventListener('mousemove', e => {
         if (!isDown) return;
         e.preventDefault();
@@ -106,22 +107,19 @@ if (hContainer) {
     });
 }
 
-/* ─── Sticky header ─── */
+/* ─── Sticky header shadow ─── */
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
     header.style.boxShadow = window.scrollY > 60
-        ? '0 2px 20px rgba(0,0,0,0.6)'
+        ? '0 2px 20px rgba(0,0,0,0.7)'
         : 'none';
 });
 
 /* ─── Mobile nav ─── */
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+const navLinks  = document.querySelector('.nav-links');
 
-navToggle?.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-});
-
+navToggle?.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks?.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => navLinks.classList.remove('open'));
 });
@@ -129,9 +127,10 @@ navLinks?.querySelectorAll('a').forEach(a => {
 /* ─── Contact form ─── */
 document.querySelector('.contact-form')?.addEventListener('submit', e => {
     e.preventDefault();
-    const btn = e.target.querySelector('.btn-primary');
+    const btn  = e.target.querySelector('.btn-primary');
+    const lang = localStorage.getItem('lang') || 'ru';
     const orig = btn.textContent;
-    btn.textContent = 'Записаны! OSU!';
+    btn.textContent = lang === 'kz' ? 'Жазылдыңыз! OSU! 🥋' : 'Записаны! OSU! 🥋';
     btn.style.opacity = '0.8';
     e.target.reset();
     setTimeout(() => {

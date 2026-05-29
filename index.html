@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Киокушинкай Каратэ — Путь Сильнейших</title>
+    <title>DEMIDOV DOJO — Shin Kyokushinkai</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body data-theme="red">
+<body>
 
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <span class="logo-kanji">極</span>
-                <span class="logo-text">КИОКУШИНКАЙ</span>
+                <span class="logo-kanji">真</span>
+                <div class="logo-texts">
+                    <span class="logo-text">DEMIDOV DOJO</span>
+                    <span class="logo-sub">ШИН КИОКУШИНКАЙ</span>
+                </div>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О стиле</a></li>
-                <li><a href="#training">Тренировки</a></li>
-                <li><a href="#themes">Стиль</a></li>
-                <li><a href="#contact">Записаться</a></li>
+                <li><a href="#home"     data-ru="Главная"     data-kz="Басты бет"    data-en="Home">Главная</a></li>
+                <li><a href="#about"    data-ru="О стиле"     data-kz="Стиль туралы" data-en="About">О стиле</a></li>
+                <li><a href="#training" data-ru="Тренировки"  data-kz="Жаттығулар"   data-en="Training">Тренировки</a></li>
+                <li><a href="#trainer"  data-ru="Тренер"      data-kz="Жаттықтырушы" data-en="Coach">Тренер</a></li>
+                <li><a href="#schedule" data-ru="Расписание"  data-kz="Кесте"        data-en="Schedule">Расписание</a></li>
+                <li><a href="#contact"  data-ru="Записаться"  data-kz="Жазылу"       data-en="Sign Up">Записаться</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="kz">ҚАЗ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
             <button class="nav-toggle" aria-label="Меню">☰</button>
         </nav>
     </header>
@@ -34,58 +43,93 @@
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
             <div class="hero-circle"></div>
+            <div class="hero-circle hero-circle-2"></div>
         </div>
         <div class="hero-content">
-            <p class="hero-kiai">OSU!</p>
+            <p class="hero-kiai">OSU! — 真極真会</p>
             <h1 class="hero-title">
-                <span>ПУТЬ</span>
-                <span class="accent">СИЛЬНЕЙШИХ</span>
+                <span>DEMIDOV</span>
+                <span class="accent">DOJO</span>
             </h1>
-            <p class="hero-subtitle">Киокушинкай — самый твёрдый стиль каратэ в мире.<br>Реальный контакт. Настоящая сила. Железный дух.</p>
+            <p class="hero-subtitle">
+                <span data-ru="Шин Киокушинкай — путь настоящего бойца."
+                      data-kz="Шин Киокушинкай — нағыз жауынгердің жолы."
+                      data-en="Shin Kyokushinkai — the path of a true fighter.">Шин Киокушинкай — путь настоящего бойца.</span><br>
+                <span data-ru="Реальный контакт. Железная воля. Победа через труд."
+                      data-kz="Нақты байланыс. Темір ерік. Еңбек арқылы жеңіс."
+                      data-en="Real contact. Iron will. Victory through hard work.">Реальный контакт. Железная воля. Победа через труд.</span>
+            </p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Начать тренировки</a>
-                <a href="#about" class="btn-outline">Узнать больше</a>
+                <a href="#contact" class="btn-primary"
+                   data-ru="Записаться на тренировку"
+                   data-kz="Жаттығуға жазылу"
+                   data-en="Join Training">Записаться на тренировку</a>
+                <a href="#about" class="btn-outline"
+                   data-ru="О зале"
+                   data-kz="Зал туралы"
+                   data-en="About the Gym">О зале</a>
             </div>
         </div>
         <div class="hero-stats-bar">
-            <div class="hstat"><span class="hstat-num">1964</span><span class="hstat-label">Год основания</span></div>
-            <div class="hstat"><span class="hstat-num">130+</span><span class="hstat-label">Стран мира</span></div>
-            <div class="hstat"><span class="hstat-num">15М+</span><span class="hstat-label">Практикующих</span></div>
-            <div class="hstat"><span class="hstat-num">10-й</span><span class="hstat-label">Чемпионат мира</span></div>
+            <div class="hstat"><span class="hstat-num">真</span><span class="hstat-label" data-ru="Истина и сила" data-kz="Ақиқат және күш" data-en="Truth & Power">Истина и сила</span></div>
+            <div class="hstat"><span class="hstat-num">70+</span><span class="hstat-label" data-ru="Стран WSKO" data-kz="WSKO елдері" data-en="WSKO Countries">Стран WSKO</span></div>
+            <div class="hstat"><span class="hstat-num">100%</span><span class="hstat-label" data-ru="Полный контакт" data-kz="Толық байланыс" data-en="Full Contact">Полный контакт</span></div>
+            <div class="hstat"><span class="hstat-num">OSU</span><span class="hstat-label" data-ru="Девиз бойца" data-kz="Жауынгер ұраны" data-en="Fighter's Motto">Девиз бойца</span></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">О Киокушинкай</h2>
+            <h2 class="section-title"
+                data-ru="О Шин Киокушинкай"
+                data-kz="Шин Киокушинкай туралы"
+                data-en="About Shin Kyokushinkai">О Шин Киокушинкай</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p class="about-quote">"Без правильного духа одно лишь обучение боевым искусствам является угрозой обществу."</p>
-                    <p class="about-author">— Масутацу Ояма, основатель Киокушинкай</p>
-                    <p>Киокушинкай (極真会) — полноконтактный стиль каратэ, основанный в <strong>1964 году</strong> Масутацу Ояма. Название переводится как «общество абсолютной истины».</p>
-                    <p>Стиль известен жёсткими тренировками, реальными спаррингами и системой Кёкушин-турниров, где победа достигается только нокаутом или судейским решением.</p>
+                    <p class="about-quote"
+                       data-ru="&quot;Настоящий воин побеждает не силой, а духом — снова и снова поднимаясь после падения.&quot;"
+                       data-kz="&quot;Нағыз жауынгер күшпен емес, рухпен жеңеді — құлаған сайын қайта тұрып.&quot;"
+                       data-en="&quot;A true warrior is not defeated by force, but rises again and again by the power of spirit.&quot;">"Настоящий воин побеждает не силой, а духом — снова и снова поднимаясь после падения."</p>
+                    <p class="about-author">— Kenji Midori,
+                        <span data-ru="основатель Шин Киокушинкай"
+                              data-kz="Шин Киокушинкайдың негізін қалаушы"
+                              data-en="founder of Shin Kyokushinkai">основатель Шин Киокушинкай</span></p>
+                    <p data-ru="Шин Киокушинкай (真極真会) — полноконтактный стиль каратэ, основанный в 2003 году Кэндзи Мидори. Иероглиф «真» означает истину и подлинность."
+                       data-kz="Шин Киокушинкай (真極真会) — 2003 жылы Кэндзи Мидори негізін қалаған толық байланысты каратэ стилі. «真» иероглифі ақиқат пен шынайылықты білдіреді."
+                       data-en="Shin Kyokushinkai (真極真会) is a full-contact karate style founded in 2003 by Kenji Midori. The kanji «真» means truth and authenticity.">Шин Киокушинкай (真極真会) — полноконтактный стиль каратэ, основанный в <strong>2003 году</strong> Кэндзи Мидори. Иероглиф «真» означает <strong>«истину» и «подлинность»</strong>.</p>
+                    <p data-ru="Стиль объединяет лучшее из Киокушинкай: жёсткие спарринги, реальные нокдауны и систему международных турниров под эгидой WSKO."
+                       data-kz="Стиль Киокушинкайдың үздік қасиеттерін біріктіреді: қатаң спарринг, нақты нокдаун және WSKO аясындағы халықаралық турнирлер жүйесі."
+                       data-en="The style combines the best of Kyokushinkai: hard sparring, real knockdowns and a system of international tournaments under WSKO.">Стиль объединяет лучшее из Киокушинкай: жёсткие спарринги, реальные нокдауны и систему международных турниров под эгидой <strong>WSKO</strong>.</p>
                 </div>
                 <div class="about-cards">
-                    <div class="about-card" data-feature="1">
-                        <div class="about-icon">🥋</div>
-                        <h3>Полный контакт</h3>
-                        <p>Удары в полную силу. Никакой показухи — только реальный бой.</p>
+                    <div class="about-card">
+                        <div class="about-icon">🥊</div>
+                        <h3 data-ru="Нокдаун-формат" data-kz="Нокдаун форматы" data-en="Knockdown Format">Нокдаун-формат</h3>
+                        <p data-ru="Соревнования без перчаток для лица. Победа — нокаутом или судейским решением."
+                           data-kz="Бет үшін қолғапсыз жарыс. Жеңіс — нокаут немесе төрешілер шешімімен."
+                           data-en="Competition without face gloves. Victory by knockout or judges' decision.">Соревнования без перчаток для лица. Победа — нокаутом или судейским решением.</p>
                     </div>
-                    <div class="about-card" data-feature="2">
-                        <div class="about-icon">⛩️</div>
-                        <h3>Традиции</h3>
-                        <p>60 лет истории, ката, этикет додзё и философия будо.</p>
+                    <div class="about-card">
+                        <div class="about-icon">🌏</div>
+                        <h3 data-ru="WSKO" data-kz="WSKO" data-en="WSKO">WSKO</h3>
+                        <p data-ru="Международная организация в 70+ странах. Чемпионаты мира и Европы каждый год."
+                           data-kz="70+ елдегі халықаралық ұйым. Жыл сайын Әлем және Еуропа чемпионаттары."
+                           data-en="International organization in 70+ countries. World and European Championships every year.">Международная организация в 70+ странах. Чемпионаты мира и Европы каждый год.</p>
                     </div>
-                    <div class="about-card" data-feature="3">
+                    <div class="about-card">
                         <div class="about-icon">🏆</div>
-                        <h3>Чемпионаты</h3>
-                        <p>Международные турниры с участниками из 130+ стран мира.</p>
+                        <h3 data-ru="Турниры" data-kz="Турнирлер" data-en="Tournaments">Турниры</h3>
+                        <p data-ru="Официальные соревнования для детей, юниоров и взрослых по всей России и СНГ."
+                           data-kz="Балалар, жастар және ересектерге арналған ресми жарыстар — бүкіл Ресей мен ТМД бойынша."
+                           data-en="Official competitions for children, juniors and adults across Russia and CIS.">Официальные соревнования для детей, юниоров и взрослых по всей России и СНГ.</p>
                     </div>
-                    <div class="about-card" data-feature="4">
+                    <div class="about-card">
                         <div class="about-icon">💪</div>
-                        <h3>Закалка духа</h3>
-                        <p>100-man kumite. Испытания, которые меняют человека навсегда.</p>
+                        <h3 data-ru="Физподготовка" data-kz="Дене дайындығы" data-en="Physical Training">Физподготовка</h3>
+                        <p data-ru="Тяжёлые тренировки, которые воспитывают не только тело, но и характер бойца."
+                           data-kz="Тек денені ғана емес, жауынгердің мінезін де тәрбиелейтін ауыр жаттығулар."
+                           data-en="Intense training that builds not only the body, but the fighter's character.">Тяжёлые тренировки, которые воспитывают не только тело, но и характер бойца.</p>
                     </div>
                 </div>
             </div>
@@ -95,124 +139,141 @@
     <!-- Training Section -->
     <section id="training" class="training">
         <div class="container">
-            <h2 class="section-title">Программа тренировок</h2>
-            <p class="section-sub">Прокрутите, чтобы узнать о каждом разделе</p>
+            <h2 class="section-title"
+                data-ru="Программа тренировок"
+                data-kz="Жаттығу бағдарламасы"
+                data-en="Training Program">Программа тренировок</h2>
+            <p class="section-sub"
+               data-ru="Потяните влево, чтобы увидеть все разделы"
+               data-kz="Барлық бөлімдерді көру үшін солға сырғытыңыз"
+               data-en="Scroll left to see all sections">Потяните влево, чтобы увидеть все разделы</p>
         </div>
         <div class="horizontal-container">
             <div class="scroll-card">
                 <div class="card-num">01</div>
                 <div class="card-icon">🤜</div>
-                <h3>Кумитэ</h3>
-                <p>Полноконтактный спарринг — сердце Киокушинкай. Учитесь под реальным давлением боя.</p>
+                <h3 data-ru="Кумитэ" data-kz="Кумитэ" data-en="Kumite">Кумитэ</h3>
+                <p data-ru="Полноконтактный спарринг — сердце Шин Киокушинкай. Тренируйтесь под реальным давлением боя."
+                   data-kz="Толық байланысты спарринг — Шин Киокушинкайдың жүрегі. Нақты ұрыс қысымымен жаттығыңыз."
+                   data-en="Full-contact sparring — the heart of Shin Kyokushinkai. Train under real combat pressure.">Полноконтактный спарринг — сердце Шин Киокушинкай. Тренируйтесь под реальным давлением боя.</p>
                 <ul class="card-list">
-                    <li>Ипpon kumite</li>
                     <li>Jiyu kumite</li>
-                    <li>Тамо ваза</li>
+                    <li>Ippon kumite</li>
+                    <li data-ru="Соревновательный формат" data-kz="Жарыс форматы" data-en="Competition format">Соревновательный формат</li>
                 </ul>
             </div>
             <div class="scroll-card">
                 <div class="card-num">02</div>
                 <div class="card-icon">🌊</div>
-                <h3>Ката</h3>
-                <p>26 форм от базовых Тайкёку до сложнейших Гарю и Сэйэнтэй. Движение как медитация.</p>
+                <h3 data-ru="Ката" data-kz="Ката" data-en="Kata">Ката</h3>
+                <p data-ru="Классические формы Киокушинкай. Медитация в движении — отточенная техника каждого удара."
+                   data-kz="Киокушинкайдың классикалық пішіндері. Қозғалыстағы медитация — әр соққының шыңдалған техникасы."
+                   data-en="Classic Kyokushinkai forms. Meditation in motion — refined technique of every strike.">Классические формы Киокушинкай. Медитация в движении — отточенная техника каждого удара.</p>
                 <ul class="card-list">
-                    <li>Тайкёку (1–3)</li>
-                    <li>Хэйан (1–5)</li>
-                    <li>Канку, Гэкисай</li>
+                    <li>Taikyoku (1–3)</li>
+                    <li>Heian (1–5)</li>
+                    <li>Kanku, Gekisai, Seienchin</li>
                 </ul>
             </div>
             <div class="scroll-card">
                 <div class="card-num">03</div>
                 <div class="card-icon">🧱</div>
-                <h3>Тамэшивари</h3>
-                <p>Разбивание твёрдых предметов. Доска, черепица, лёд — тест реальной силы удара.</p>
+                <h3 data-ru="Тамэшивари" data-kz="Тамэшивари" data-en="Tameshiwari">Тамэшивари</h3>
+                <p data-ru="Разбивание досок, черепицы и льда — тест реальной ударной силы руки и ноги."
+                   data-kz="Тақта, черепица және мұзды сындыру — қол мен аяқтың нақты соққы күшін тексеру."
+                   data-en="Breaking boards, tiles and ice — a test of real striking power of hands and feet.">Разбивание досок, черепицы и льда — тест реальной ударной силы руки и ноги.</p>
                 <ul class="card-list">
-                    <li>Сэйкэн (кулак)</li>
-                    <li>Хайсоку (подъём стопы)</li>
-                    <li>Хиджи (локоть)</li>
+                    <li data-ru="Сэйкэн (прямой удар)" data-kz="Сэйкэн (тура соққы)" data-en="Seiken (front punch)">Сэйкэн (прямой удар)</li>
+                    <li data-ru="Хайсоку (подъём стопы)" data-kz="Хайсоку (табан үсті)" data-en="Haisoku (instep)">Хайсоку (подъём стопы)</li>
+                    <li data-ru="Хиджи (локоть)" data-kz="Хиджи (шынтақ)" data-en="Hiji (elbow)">Хиджи (локоть)</li>
                 </ul>
             </div>
             <div class="scroll-card">
                 <div class="card-num">04</div>
                 <div class="card-icon">🏋️</div>
-                <h3>Физподготовка</h3>
-                <p>Отжимания на кулаках, приседания, пресс — базовая физическая подготовка бойца.</p>
+                <h3 data-ru="ОФП" data-kz="ЖДД" data-en="Conditioning">ОФП</h3>
+                <p data-ru="Силовые упражнения, кардио и специальная физподготовка для бойца: мешок, лапы, скакалка."
+                   data-kz="Күш жаттығулары, кардио және жауынгерге арналған арнайы дене дайындығы: қап, алақан, секіргіш."
+                   data-en="Strength training, cardio and special fighter conditioning: heavy bag, pads, jump rope.">Силовые упражнения, кардио и специальная физподготовка для бойца: мешок, лапы, скакалка.</p>
                 <ul class="card-list">
-                    <li>100 отжиманий</li>
-                    <li>Мешок/макивара</li>
-                    <li>Растяжка, кёкушин-йога</li>
+                    <li data-ru="Отжимания на кулаках" data-kz="Жұдырықпен тіреліп отжимание" data-en="Knuckle push-ups">Отжимания на кулаках</li>
+                    <li data-ru="Работа на снарядах" data-kz="Снарядтармен жұмыс" data-en="Bag & pad work">Работа на снарядах</li>
+                    <li data-ru="Растяжка и гибкость" data-kz="Созылу және икемділік" data-en="Stretching & flexibility">Растяжка и гибкость</li>
                 </ul>
             </div>
             <div class="scroll-card">
                 <div class="card-num">05</div>
                 <div class="card-icon">🧘</div>
-                <h3>Философия OSU</h3>
-                <p>OSU — слово, объединяющее терпение, уважение и непреклонную волю к победе.</p>
+                <h3 data-ru="OSU — дух" data-kz="OSU — рух" data-en="OSU — Spirit">OSU — дух</h3>
+                <p data-ru="OSU — символ упорства, уважения и несломленной воли. Основа философии Шин Киокушинкай."
+                   data-kz="OSU — табандылықтың, құрметтің және сынбас ерік-жігердің символы. Шин Киокушинкай философиясының негізі."
+                   data-en="OSU — the symbol of perseverance, respect and unbreakable will. The foundation of Shin Kyokushinkai.">OSU — символ упорства, уважения и несломленной воли. Основа философии Шин Киокушинкай.</p>
                 <ul class="card-list">
-                    <li>Моральный кодекс додзё</li>
-                    <li>Этикет и уважение</li>
-                    <li>Путь воина — будо</li>
+                    <li data-ru="Кодекс Додзё" data-kz="Додзё кодексі" data-en="Dojo Code">Кодекс Додзё</li>
+                    <li data-ru="Этикет и уважение" data-kz="Этикет және құрмет" data-en="Etiquette & Respect">Этикет и уважение</li>
+                    <li data-ru="Будо — путь воина" data-kz="Будо — жауынгердің жолы" data-en="Budo — the warrior's way">Будо — путь воина</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Themes / Gallery Section -->
-    <section id="themes" class="themes">
+    <!-- Trainer Section -->
+    <section id="trainer" class="trainer-section">
         <div class="container">
-            <h2 class="section-title">Выберите свой стиль</h2>
-            <p class="section-sub">Нажмите на цвет — и сайт изменит тему оформления</p>
-            <div class="themes-grid">
-                <div class="theme-card active"
-                     data-theme="red"
-                     data-color1="#c0392b"
-                     data-color2="#e74c3c"
-                     style="background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);">
-                    <span class="theme-label">Кровь и огонь</span>
-                    <div class="theme-check">✓</div>
+            <h2 class="section-title"
+                data-ru="Тренер"
+                data-kz="Жаттықтырушы"
+                data-en="Coach">Тренер</h2>
+            <div class="trainer-grid">
+                <div class="trainer-avatar">
+                    <img src="trainer.jpg" alt="Sergey Demidov — DEMIDOV DOJO Coach" class="trainer-photo">
                 </div>
-                <div class="theme-card"
-                     data-theme="gold"
-                     data-color1="#b8860b"
-                     data-color2="#f0c040"
-                     style="background: linear-gradient(135deg, #b8860b 0%, #f0c040 100%);">
-                    <span class="theme-label">Чемпион</span>
-                    <div class="theme-check">✓</div>
-                </div>
-                <div class="theme-card"
-                     data-theme="blue"
-                     data-color1="#1a5276"
-                     data-color2="#2e86c1"
-                     style="background: linear-gradient(135deg, #1a5276 0%, #2e86c1 100%);">
-                    <span class="theme-label">Синее небо</span>
-                    <div class="theme-check">✓</div>
-                </div>
-                <div class="theme-card"
-                     data-theme="green"
-                     data-color1="#1e8449"
-                     data-color2="#27ae60"
-                     style="background: linear-gradient(135deg, #1e8449 0%, #27ae60 100%);">
-                    <span class="theme-label">Лес и сила</span>
-                    <div class="theme-check">✓</div>
-                </div>
-                <div class="theme-card"
-                     data-theme="purple"
-                     data-color1="#6c3483"
-                     data-color2="#9b59b6"
-                     style="background: linear-gradient(135deg, #6c3483 0%, #9b59b6 100%);">
-                    <span class="theme-label">Мастер</span>
-                    <div class="theme-check">✓</div>
-                </div>
-                <div class="theme-card"
-                     data-theme="orange"
-                     data-color1="#ca6f1e"
-                     data-color2="#f39c12"
-                     style="background: linear-gradient(135deg, #ca6f1e 0%, #f39c12 100%);">
-                    <span class="theme-label">Закат воина</span>
-                    <div class="theme-check">✓</div>
+                <div class="trainer-info">
+                    <div class="trainer-badge"
+                         data-ru="Главный тренер"
+                         data-kz="Бас жаттықтырушы"
+                         data-en="Head Coach">Главный тренер</div>
+                    <h3 class="trainer-name">Sergey Demidov</h3>
+                    <p class="trainer-title"
+                       data-ru="Тренер по Шин Киокушинкай · DEMIDOV DOJO"
+                       data-kz="Шин Киокушинкай жаттықтырушысы · DEMIDOV DOJO"
+                       data-en="Shin Kyokushinkai Coach · DEMIDOV DOJO">Тренер по Шин Киокушинкай · DEMIDOV DOJO</p>
+                    <p class="trainer-bio"
+                       data-ru="Сергей — основатель и главный тренер клуба DEMIDOV DOJO. Воспитал поколение бойцов, выступающих на российских и международных соревнованиях WSKO. Тренирует взрослых, юниоров и детей — от начинающих до спортсменов."
+                       data-kz="Сергей — DEMIDOV DOJO клубының негізін қалаушысы және бас жаттықтырушысы. Ресей және халықаралық WSKO жарыстарына қатысатын бүтін бір жауынгерлер ұрпағын тәрбиеледі. Жаңадан бастаушылардан спортшыларға дейін — ересектерді, жасөспірімдерді және балаларды жаттықтырады."
+                       data-en="Sergey is the founder and head coach of DEMIDOV DOJO. He has trained a generation of fighters competing in Russian and international WSKO events. He coaches adults, juniors and children — from complete beginners to competitive athletes.">Сергей — основатель и главный тренер клуба DEMIDOV DOJO. Воспитал поколение бойцов, выступающих на российских и международных соревнованиях WSKO. Тренирует взрослых, юниоров и детей — от начинающих до спортсменов.</p>
+                    <div class="trainer-achievements">
+                        <div class="achievement">
+                            <span class="ach-icon">🥋</span>
+                            <div>
+                                <strong data-ru="Чёрный пояс" data-kz="Қара белбеу" data-en="Black Belt">Чёрный пояс</strong>
+                                <small data-ru="Шин Киокушинкай" data-kz="Шин Киокушинкай" data-en="Shin Kyokushinkai">Шин Киокушинкай</small>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <span class="ach-icon">🏆</span>
+                            <div>
+                                <strong data-ru="Опыт тренера" data-kz="Жаттықтырушы тәжірибесі" data-en="Coach Experience">Опыт тренера</strong>
+                                <small data-ru="Личный наставник каждого ученика" data-kz="Әр шәкірттің жеке тәлімгері" data-en="Personal mentor for every student">Личный наставник каждого ученика</small>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <span class="ach-icon">🌏</span>
+                            <div>
+                                <strong data-ru="WSKO" data-kz="WSKO" data-en="WSKO">WSKO</strong>
+                                <small data-ru="Официальный член организации" data-kz="Ұйымның ресми мүшесі" data-en="Official member of the organization">Официальный член организации</small>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <span class="ach-icon">👦</span>
+                            <div>
+                                <strong data-ru="Дети и взрослые" data-kz="Балалар мен ересектер" data-en="Kids & Adults">Дети и взрослые</strong>
+                                <small data-ru="Группы от 6 лет и старше" data-kz="6 жастан жоғары топтар" data-en="Groups from age 6 and up">Группы от 6 лет и старше</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="theme-toast" id="themeToast">Тема изменена! 🔥</div>
         </div>
     </section>
 
@@ -220,20 +281,20 @@
     <section class="stats">
         <div class="container stats-inner">
             <div class="stat-item">
-                <div class="stat-number" data-count="60">0</div>
-                <p>Лет традиций</p>
+                <div class="stat-number" data-count="2003">0</div>
+                <p data-ru="Год основания стиля" data-kz="Стиль құрылған жыл" data-en="Style founded">Год основания стиля</p>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-count="130">0</div>
-                <p>Стран мира</p>
+                <div class="stat-number" data-count="70">0</div>
+                <p data-ru="Стран WSKO" data-kz="WSKO елдері" data-en="WSKO countries">Стран WSKO</p>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-count="15">0</div>
-                <p>Млн. учеников</p>
+                <div class="stat-number" data-count="3">0</div>
+                <p data-ru="Группы в зале" data-kz="Залдағы топтар" data-en="Groups in the gym">Группы в зале</p>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-count="7">0</div>
-                <p>Данов — высший пояс</p>
+                <div class="stat-number" data-count="6">0</div>
+                <p data-ru="Тренировок в неделю" data-kz="Аптасына жаттығу" data-en="Sessions per week">Тренировок в неделю</p>
             </div>
         </div>
     </section>
@@ -241,17 +302,91 @@
     <!-- Belts Section -->
     <section class="belts">
         <div class="container">
-            <h2 class="section-title">Система поясов</h2>
+            <h2 class="section-title"
+                data-ru="Система поясов"
+                data-kz="Белбеулер жүйесі"
+                data-en="Belt System">Система поясов</h2>
+            <p class="section-sub"
+               data-ru="От белого до чёрного — каждый пояс требует труда и дисциплины"
+               data-kz="Ақтан қараға дейін — әр белбеу еңбек пен тәртіпті талап етеді"
+               data-en="From white to black — every belt demands effort and discipline">От белого до чёрного — каждый пояс требует труда и дисциплины</p>
             <div class="belts-row">
-                <div class="belt" style="--belt-color:#f0f0f0;"><span>Белый</span><small>10-й кю</small></div>
-                <div class="belt" style="--belt-color:#f5a623;"><span>Оранжевый</span><small>9-й кю</small></div>
-                <div class="belt" style="--belt-color:#4facfe;"><span>Голубой</span><small>8-й кю</small></div>
-                <div class="belt" style="--belt-color:#f5a623; border-top: 3px solid #333;"><span>Оранж+полоса</span><small>7-й кю</small></div>
-                <div class="belt" style="--belt-color:#4facfe; border-top: 3px solid #333;"><span>Голубой+полоса</span><small>6-й кю</small></div>
-                <div class="belt" style="--belt-color:#f9e900;"><span>Жёлтый</span><small>5-й кю</small></div>
-                <div class="belt" style="--belt-color:#43e97b;"><span>Зелёный</span><small>4-й кю</small></div>
-                <div class="belt" style="--belt-color:#764ba2;"><span>Коричневый</span><small>3–1 кю</small></div>
-                <div class="belt" style="--belt-color:#1a1a1a; border: 2px solid gold;"><span style="color:#fff;">Чёрный</span><small style="color:#f0c040;">1-й–7-й дан</small></div>
+                <div class="belt" style="--belt-color:#f0f0f0;">
+                    <span data-ru="Белый" data-kz="Ақ" data-en="White">Белый</span><small>10 kyu</small>
+                </div>
+                <div class="belt" style="--belt-color:#f5871f;">
+                    <span data-ru="Оранжевый" data-kz="Қызғылт сары" data-en="Orange">Оранжевый</span><small>9 kyu</small>
+                </div>
+                <div class="belt belt--stripe" style="--belt-color:#f5871f; --stripe-color:#4facfe;">
+                    <span data-ru="Оранж + синяя" data-kz="Қызғ. + көк" data-en="Orange + blue">Оранж + синяя</span><small>8 kyu</small>
+                </div>
+                <div class="belt" style="--belt-color:#4facfe;">
+                    <span data-ru="Синий" data-kz="Көк" data-en="Blue">Синий</span><small>7 kyu</small>
+                </div>
+                <div class="belt belt--stripe" style="--belt-color:#4facfe; --stripe-color:#f9e900;">
+                    <span data-ru="Синий + жёлтая" data-kz="Көк + сары" data-en="Blue + yellow">Синий + жёлтая</span><small>6 kyu</small>
+                </div>
+                <div class="belt" style="--belt-color:#f9e900;">
+                    <span data-ru="Жёлтый" data-kz="Сары" data-en="Yellow">Жёлтый</span><small>5 kyu</small>
+                </div>
+                <div class="belt belt--stripe" style="--belt-color:#f9e900; --stripe-color:#43e97b;">
+                    <span data-ru="Жёлтый + зелёная" data-kz="Сары + жасыл" data-en="Yellow + green">Жёлтый + зелёная</span><small>4 kyu</small>
+                </div>
+                <div class="belt" style="--belt-color:#43e97b;">
+                    <span data-ru="Зелёный" data-kz="Жасыл" data-en="Green">Зелёный</span><small>3 kyu</small>
+                </div>
+                <div class="belt belt--stripe" style="--belt-color:#43e97b; --stripe-color:#7b4f2e;">
+                    <span data-ru="Зелёный + кор." data-kz="Жасыл + қоңыр" data-en="Green + brown">Зелёный + кор.</span><small>2 kyu</small>
+                </div>
+                <div class="belt" style="--belt-color:#7b4f2e;">
+                    <span style="color:#fff;" data-ru="Коричневый" data-kz="Қоңыр" data-en="Brown">Коричневый</span><small style="color:rgba(255,255,255,0.6);">1 kyu</small>
+                </div>
+                <div class="belt belt--stripe" style="--belt-color:#7b4f2e; --stripe-color:#111;">
+                    <span style="color:#fff;" data-ru="Кор. + чёрная" data-kz="Қоңыр + қара" data-en="Brown + black">Кор. + чёрная</span><small style="color:rgba(255,255,255,0.6);">1 kyu ★</small>
+                </div>
+                <div class="belt" style="--belt-color:#111; border: 1.5px solid #f0c040;">
+                    <span style="color:#f0c040;" data-ru="Чёрный" data-kz="Қара" data-en="Black">Чёрный</span><small style="color:#f0c040;" data-ru="1–7 дан" data-kz="1–7 дан" data-en="1–7 dan">1–7 дан</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2 class="section-title"
+                data-ru="Расписание тренировок"
+                data-kz="Жаттығу кестесі"
+                data-en="Training Schedule">Расписание тренировок</h2>
+            <p class="section-sub"
+               data-ru="Первое занятие — бесплатно для новичков"
+               data-kz="Бірінші сабақ — жаңадан бастаушылар үшін тегін"
+               data-en="First class is free for beginners">Первое занятие — бесплатно для новичков</p>
+            <div class="schedule-grid schedule-grid--two">
+                <div class="schedule-card">
+                    <div class="schedule-day"
+                         data-ru="Понедельник · Среда · Пятница"
+                         data-kz="Дүйсенбі · Сәрсенбі · Жұма"
+                         data-en="Monday · Wednesday · Friday">Понедельник · Среда · Пятница</div>
+                    <div class="schedule-group" data-ru="Дети" data-kz="Балалар" data-en="Children">Дети</div>
+                    <div class="schedule-time">18:00 — 19:30</div>
+                    <div class="schedule-desc"
+                         data-ru="Шин Киокушинкай · от 6 лет"
+                         data-kz="Шин Киокушинкай · 6 жастан"
+                         data-en="Shin Kyokushinkai · ages 6+">Шин Киокушинкай · от 6 лет</div>
+                </div>
+                <div class="schedule-card schedule-card--adults">
+                    <div class="schedule-day"
+                         data-ru="Понедельник · Среда · Пятница"
+                         data-kz="Дүйсенбі · Сәрсенбі · Жұма"
+                         data-en="Monday · Wednesday · Friday">Понедельник · Среда · Пятница</div>
+                    <div class="schedule-group" data-ru="Взрослые" data-kz="Ересектер" data-en="Adults">Взрослые</div>
+                    <div class="schedule-time">20:00 — 21:30</div>
+                    <div class="schedule-desc"
+                         data-ru="Шин Киокушинкай · от 13 лет"
+                         data-kz="Шин Киокушинкай · 13 жастан"
+                         data-en="Shin Kyokushinkai · ages 13+">Шин Киокушинкай · от 13 лет</div>
+                </div>
             </div>
         </div>
     </section>
@@ -260,25 +395,55 @@
     <section id="contact" class="contact">
         <div class="container contact-inner">
             <div class="contact-info">
-                <h2 class="section-title" style="text-align:left;">Записаться<br>в секцию</h2>
-                <p>Первое занятие — бесплатно. Приходите в любом возрасте и любой физической форме. Мы начинаем с нуля.</p>
+                <h2 class="section-title" style="text-align:left;"
+                    data-ru="Записаться в секцию"
+                    data-kz="Секцияға жазылу"
+                    data-en="Join the Gym">Записаться<br>в секцию</h2>
+                <p data-ru="Первое занятие бесплатно. Приходите в любом возрасте и форме — начинаем с нуля."
+                   data-kz="Бірінші сабақ тегін. Кез келген жаста және дене бітімінде келіңіз — нөлден бастаймыз."
+                   data-en="First class is free. Come at any age and fitness level — we start from scratch.">Первое занятие бесплатно. Приходите в любом возрасте и форме — начинаем с нуля.</p>
                 <div class="contact-details">
-                    <div class="contact-detail">📍 <span>г. Москва, ул. Будо, 1</span></div>
-                    <div class="contact-detail">📞 <span>+7 (999) 000-00-00</span></div>
-                    <div class="contact-detail">🕐 <span>Пн/Ср/Пт — 18:00–20:00</span></div>
+                    <div class="contact-detail">📍 <span><a href="https://2gis.ru/search/%D0%A3%D0%BB%D0%B8%D1%86%D0%B0+%D0%A4%D0%B5%D0%B4%D0%BE%D1%81%D0%B5%D0%B5%D0%B2%D0%B0+132%2F1" target="_blank" rel="noopener" class="contact-link">Улица Федосеева, 132/1</a></span></div>
+                    <div class="contact-detail">📞 <span><a href="tel:+77770555533" class="contact-link">+7 777 055-55-33</a></span></div>
+                    <div class="contact-detail">📸 <span>Instagram: @demidovdojo</span></div>
+                    <div class="contact-detail">🕐 <span
+                        data-ru="Пн / Ср / Пт — дети 18:00, взрослые 20:00"
+                        data-kz="Дс / Ср / Жм — балалар 18:00, ересектер 20:00"
+                        data-en="Mon / Wed / Fri — kids 18:00, adults 20:00">Пн / Ср / Пт — дети 18:00, взрослые 20:00</span></div>
                 </div>
             </div>
             <form class="contact-form">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Ваш телефон" required>
+                <input type="text"
+                    data-ru-ph="Ваше имя"
+                    data-kz-ph="Сіздің атыңыз"
+                    data-en-ph="Your name"
+                    placeholder="Ваше имя" required>
+                <input type="tel"
+                    data-ru-ph="Ваш телефон"
+                    data-kz-ph="Телефон нөміріңіз"
+                    data-en-ph="Your phone number"
+                    placeholder="Ваш телефон" required>
                 <select>
-                    <option value="" disabled selected>Ваш возраст</option>
-                    <option>7–12 лет (детская группа)</option>
-                    <option>13–17 лет (подростки)</option>
-                    <option>18+ лет (взрослые)</option>
+                    <option value="" disabled selected
+                        data-ru="Группа" data-kz="Топ" data-en="Group">Группа</option>
+                    <option value="kids"
+                        data-ru="Дети (6–12 лет) · 18:00–19:30"
+                        data-kz="Балалар (6–12 жас) · 18:00–19:30"
+                        data-en="Children (6–12 yrs) · 18:00–19:30">Дети (6–12 лет) · 18:00–19:30</option>
+                    <option value="adults"
+                        data-ru="Взрослые (от 13 лет) · 20:00–21:30"
+                        data-kz="Ересектер (13 жастан) · 20:00–21:30"
+                        data-en="Adults (13+ yrs) · 20:00–21:30">Взрослые (от 13 лет) · 20:00–21:30</option>
                 </select>
-                <textarea placeholder="Вопрос или комментарий (необязательно)" rows="4"></textarea>
-                <button type="submit" class="btn-primary">Записаться — это бесплатно</button>
+                <textarea
+                    data-ru-ph="Вопрос или комментарий (необязательно)"
+                    data-kz-ph="Сұрақ немесе пікір (міндетті емес)"
+                    data-en-ph="Question or comment (optional)"
+                    placeholder="Вопрос или комментарий (необязательно)" rows="4"></textarea>
+                <button type="submit" class="btn-primary"
+                    data-ru="Записаться — первое занятие бесплатно"
+                    data-kz="Жазылу — бірінші сабақ тегін"
+                    data-en="Sign Up — first class is free">Записаться — первое занятие бесплатно</button>
             </form>
         </div>
     </section>
@@ -287,11 +452,17 @@
     <footer class="footer">
         <div class="container footer-inner">
             <div class="footer-logo">
-                <span class="logo-kanji">極</span>
-                <span>КИОКУШИНКАЙ</span>
+                <span class="logo-kanji" style="font-size:1.5rem;">真</span>
+                <span>DEMIDOV DOJO</span>
             </div>
-            <p class="footer-motto">OSU! — терпение, уважение, воля.</p>
-            <p class="footer-copy">&copy; 2026 Киокушинкай Каратэ. Все права защищены.</p>
+            <p class="footer-motto"
+               data-ru="OSU! — Истина. Упорство. Победа."
+               data-kz="OSU! — Ақиқат. Табандылық. Жеңіс."
+               data-en="OSU! — Truth. Perseverance. Victory.">OSU! — Истина. Упорство. Победа.</p>
+            <p class="footer-copy"
+               data-ru="© 2026 DEMIDOV DOJO · Шин Киокушинкай. Все права защищены."
+               data-kz="© 2026 DEMIDOV DOJO · Шин Киокушинкай. Барлық құқықтар қорғалған."
+               data-en="© 2026 DEMIDOV DOJO · Shin Kyokushinkai. All rights reserved.">© 2026 DEMIDOV DOJO · Шин Киокушинкай. Все права защищены.</p>
         </div>
     </footer>
 
